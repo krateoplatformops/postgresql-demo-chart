@@ -2,7 +2,7 @@ name: package
 
 on:
   push:
-    tags: [ 'v*' ]
+    tags: [ '*' ]
 
 
 jobs:
@@ -36,4 +36,3 @@ jobs:
             *.tgz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
